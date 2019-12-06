@@ -1,5 +1,9 @@
 .app-modal{
   position:fixed;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
   top:0;
   right:0;
   bottom:0;
@@ -9,9 +13,16 @@
 }
 
 .app-modal-body{
-  padding:20px;
   background:#fff;
+  min-width:30%;
+  padding:1.5rem;
+/*  transform: translate(50%,10%);
+  left:50%;
+  top:50%;
+  padding:20px;
   margin:40px;
+  width:30%;
+  */
 }
 
 .app-modal-background{
