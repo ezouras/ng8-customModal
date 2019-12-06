@@ -1,0 +1,18 @@
+<div class="homeContainer">
+  <h1>Home</h1>
+  <p>{{bodyText}}</p>
+  <button (click)="openModal('custom-modal1')">Open Modal 1</button>
+  <button (click)="openModal('custom-modal2')">Open Modal 2</button>
+</div>
+
+<app-modal id="custom-modal1">
+    <h1>Custome modal!</h1>
+    <p>Homae page text: <input type="text" [(ngModel)]="boyText"/></p>
+    <div class="quotesTitle"> Saved stuff is as follows...</div>
+    <div class="quotesContainer">
+      <div class="quotes" *ngFor="let quote of quotes">
+        <div class="quote">{{quote}}</div>
+      </div>
+    </div>
+    <button (click)="closeModal('custom-modal1')">Close</button>
+</app-modal>

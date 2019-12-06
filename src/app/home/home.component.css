@@ -1,0 +1,36 @@
+.homeContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  margin-bottom:1rem;
+  padding:1rem;
+  color:white;
+  background:navy;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:focus{
+  outline:none;
+}
+
+.quotesTitle{
+  margin-bottom:1rem;
+  font-size: 1.5rem;
+}
+
+.quote{
+  margin-bottom:1rem;
+}
+
+
+.quotes:nth-child(odd){
+  color: cyan;
+}
+.quotes:nth-child(even){
+  color:hotpink;
+}
