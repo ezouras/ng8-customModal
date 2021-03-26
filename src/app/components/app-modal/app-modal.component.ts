@@ -5,7 +5,7 @@ import { modalService } from "./../../services/modal.service";
   templateUrl: './app-modal.component.html',
   styleUrls: ['./app-modal.component.css']
 })
-export class AppmodalComponent implements OnInit {
+export class AppmodalComponent implements OnInit, OnDestroy{
   @Input() id: string;
   private element:any;
 
